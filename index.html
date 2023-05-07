@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <!--Il permet aux navigateurs d'interpréter et d'afficher correctement le texte sur la page-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--Balise meta pour spécifier le mode de compatibilité de rendu pour Internet Explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Balise meta pour spécifier les propriétés de la vue sur les appareils mobiles-->
+
+    <!--Description du site-->
+    <meta
+      name="description"
+      content="site vitrine du cybercafé plein sud phone à vernouillet dreux"
+    />
+
+    <!--Fontawesome pour les icones-->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/solid.js"
+      integrity="sha384-/BxOvRagtVDn9dJ+JGCtcofNXgQO/CCCVKdMfL115s3gOgQxWaX/tSq5V8dRgsbc"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/fontawesome.js"
+      integrity="sha384-dPBGbj4Uoy1OOpM4+aRGfAOc0W37JkROT+3uynUgTHZCHZNMHfGXsmmvYTffZjYO"
+      crossorigin="anonymous"
+    ></script>
+    <!--Fin Fontawesome-->
+
+    <!--Google font pour le choix d'écriture du site-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <!--Fin Google font-->
+
+    <!--Style css-->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/articles.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <!--Fin Style css-->
+
+    <!--Titre du site que l'on voit tout en haut comme une étiquette-->
+    <title>Plein Sud Phone</title>
+    <!--Fin titre-->
+  </head>
+
+  <body>
+    <!--HEADER-->
+    <header class="header" id="accueil">
+      <div class="header__texture">
+        <div class="container">
+          <div class="header__navbar">
+            <div class="header__navbar--logo">
+              <h1 class="header__navbar--logo-title">Plein Sud Phone</h1>
+            </div>
+            <!--NAVIGATION-->
+            <nav class="header__navbar--menu">
+              <a href="#accueil" class="header__navbar--menu-link"
+                ><i class="fas fa-home"></i> Acceuil</a
+              >
+              <a href="#articles" class="header__navbar--menu-link"
+                ><i class="fas fa-newspaper"></i> Services</a
+              >
+              <a href="#contact" class="header__navbar--menu-link"
+                ><i class="fas fa-phone"></i> Contact</a
+              >
+            </nav>
+            <!--FIN NAVIGATION-->
+            <!--ICONE LORSQUE LE SITE EST EN 600PX-->
+            <div class="header__navbar-toggle">
+              <span class="header__navbar-toggle-icons"></span>
+            </div>
+            <!--FIN ICONE-->
+          </div>
+          <div class="header__slogan">
+            <h1 class="h__slogan--title">Bienvenue</h1>
+            <a href="tel:0237462794" class="h__slogan--btn">Contactez Nous</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--FIN HEADER-->
+    <!--MAIN-->
+    <section class="articles">
+      <div class="container">
+        <h2 class="articles__title" id="articles">Services</h2>
+        <div class="articles__items">
+          <div
+            class="article"
+            style="
+              background: url('./image/internet.webp');
+              background-size: cover;
+            "
+          >
+            <div class="article__filter"></div>
+            <div class="article__name">Accès à Internet</div>
+          </div>
+
+          <div
+            class="article"
+            style="
+              background: url('./image/photocopie.webp');
+              background-size: cover;
+            "
+          >
+            <div class="article__filter"></div>
+            <div class="article__name">
+              Impression, numérisation et photocopie
+            </div>
+          </div>
+
+          <div
+            class="article"
+            style="
+              background: url('./image/reparation.webp');
+              background-size: cover;
+            "
+          >
+            <div class="article__filter"></div>
+            <div class="article__name">Réparations de téléphones</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-wrap">
+          <div class="contact-in">
+            <h2 class="articles__title">Contact</h2>
+            <h3>
+              <a href="tel:0237462794"
+                ><i class="fa fa-phone" aria-hidden="true"></i> 02 37 46 27
+                94</a
+              >
+            </h3>
+
+            <h3>
+              <a href="mailto:pleinsudphone@hotmail.com">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                pleinsudphone@hotmail.com</a
+              >
+            </h3>
+
+            <h3>
+              <i class="fa fa-map-marker" aria-hidden="true"></i> Address: 30
+              Rue du Pressoir<br />
+              28500 Vernouillet
+            </h3>
+          </div>
+          <!--IFRAME intégrant une carte Google Maps avec l'emplacement de Plein Sud Phone-->
+          <div class="contact-in">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2632.308488035449!2d1.363765750903764!3d48.71869683679921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e1555a6441fe1f%3A0xe0cee4fb6fe41c76!2sPlein%20sud%20phone!5e0!3m2!1sfr!2sfr!4v1681469706366!5m2!1sfr!2sfr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Emplacement de Plein Sud Phone sur Google Maps"
+            ></iframe>
+            <!--FIN IFRAME-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--FIN MAIN-->
+    <!--FOOTER-->
+    <footer class="footer">
+      <a href="mailto:amineelghamri11@gmail.com">© By El Ghamri Amine</a>
+    </footer>
+    <!--FIN FOOTER-->
+
+    <script src="./script.js"></script>
+  </body>
+</html>
